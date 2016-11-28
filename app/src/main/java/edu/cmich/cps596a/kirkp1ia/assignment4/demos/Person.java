@@ -13,7 +13,7 @@ public class Person extends SugarRecord {
     protected int age;
 
     public Person() {
-
+        // This default constructor is required for the table to be created.
     }
 
     public Person(String name, String nickName, int age) {

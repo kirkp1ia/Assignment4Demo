@@ -35,6 +35,10 @@ public class DemoActivity extends AppCompatActivity {
         int age = Integer.valueOf(((EditText) this.findViewById(R.id.input__age)).getText().toString());
 
         Person p = new Person(name, nickName, age);
-        p.save();
+        p.save(); // This is a built in function that saves the instance.
+    }
+
+    public void delAllPeople(View v) {
+        Person.deleteAll(Person.class);
     }
 }

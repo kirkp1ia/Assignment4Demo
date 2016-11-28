@@ -15,15 +15,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
-            android:text="All People"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn__get_all_people"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:onClick="getAllPeople" />
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="All People"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__get_all_people"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="getAllPeople"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Delete All"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn__del_all"
+                android:layout_weight="1"
+                android:onClick="delAllPeople" />
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
