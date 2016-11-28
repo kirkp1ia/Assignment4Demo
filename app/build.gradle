@@ -26,5 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile files('C:/Users/Ian/AndroidStudioProjects/Assignment4/lib/kirkModels.jar')
+    compile 'com.github.satyan:sugar:1.4'
 }

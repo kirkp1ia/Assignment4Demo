@@ -10,8 +10,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.cmich.cps596a.kirkp1ia.assignment4.DemoActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="All People"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn__get_all_people"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="getAllPeople" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view_people"
+            android:layout_below="@+id/btn__get_all_people"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/input__name"
+            android:layout_below="@+id/view_people"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/input__name"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/input__nickname"
+            android:hint="Nickname" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/input__nickname"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/input__age"
+            android:hint="Age" />
+
+        <Button
+            android:text="Create Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input__age"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn__new_person"
+            android:onClick="newPersonClicked" />
+    </LinearLayout>
+
 </RelativeLayout>
